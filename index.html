@@ -1,77 +1,58 @@
-<!DOCTYPE html>
-<html lang="vi" class="no-js">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Chúc mừng 8/3</title>
-    <link rel="shortcut icon" href="./rose.png">
-    <link rel="stylesheet" href="https://use.typekit.net/eqx3jwb.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <script>
-        document.documentElement.className = "js";
-
-        var supportsCssVars = function supportsCssVars() {
-            var e,
-                t = document.createElement("style");
-            return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e;
-        };
-
-        supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables.");
-    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="canvas.css" />
+    <link rel="stylesheet" href="present.css" />
+    <link rel="stylesheet" href="card.css" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="jquery.js"></script>
 </head>
 
-<body class="demo-1 loading">
-    <main>
-        <div class="message">Please view this demo on a desktop to see the effect.</div>
-        <div class="frame">
-        </div>
-        <div class="content">
-            <div class="grid">
-                <div class="grid__item pos-2">
-                    <div class="grid__item-img" style="background-image:url(./img/img1.png);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-3">
-                    <div class="grid__item-img" style="background-image:url(./img/img3.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-4">
-                    <div class="grid__item-img" style="background-image:url(./img/img4.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-1">
-                    <div class="grid__item-img" style="background-image:url(./img/img2.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-5">
-                    <div class="grid__item-img" style="background-image:url(./img/img5.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-6">
-                    <div class="grid__item-img" style="background-image:url(./img/img6.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-7">
-                    <div class="grid__item-img" style="background-image:url(./img/img7.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-8">
-                    <div class="grid__item-img" style="background-image:url(./img/img8.jpg);" class="hover"></div>
-                </div>
-
-                <div class="grid__item pos-9">
-                    <div class="grid__item-img" style="background-image:url(./img/img9.jpg);" class="hover"></div>
-                </div>
-                <div class="grid__item pos-10">
-                    <div class="grid__item-img" style="background-image:url(./img/img10.png);" class="hover"></div>
+<body>
+    <div class="parent">
+        <canvas id="canvas"></canvas>
+        <section class="above-fold">
+            <div class="wrap-present">
+                <div class="present-box" id="present">
+                    <div class="present">
+                        <div class="img-wrap" id="present-image"></div>
+                    </div>
+                    <div class="side front"></div>
+                    <div class="side back"></div>
+                    <div class="side left"></div>
+                    <div class="side right"></div>
+                    <div class="side top">
+                        <span class="to">
+                <span class="name" id="nametag"> </span>
+                        </span>
+                    </div>
+                    <div class="side bottom"></div>
                 </div>
             </div>
-            <h2 class="content__title no-select">
-                <span>Love</span>
-            </h2>
-            <h2 class="content__title no-select">
-                <span class="content__title-sub">Chúc bé 8/3 xinh đẹp</span>
-            </h2>
+            <p class="info-text">Click to Open</p>
+        </section>
+
+        <div id="card">
+            <h4 class="title-card">💘Bảo dỗi💘</h4>
+
+            <img src="hot-girl.png" class="honey" />
+
+            <h4 class="content-card">
+            </h4>
         </div>
-    </main>
-    <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
-			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
-		</svg>
-    <script src="./script.js"></script>
+    </div>
+    <audio autoplay loop id="playAudio">
+      <source src="nhacnen.mp3">
+    </audio>
 </body>
+<script src="config.js"></script>
+<script src="canvas.js"></script>
+<script src="present.js"></script>
+<script>
+</script>
 
 </html>
